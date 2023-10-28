@@ -9,9 +9,9 @@ PtrToEmployee searchEmployeeByNumber(PtrToConstEmployee ptr, int tableSize, long
 		if(ptr->number == targetNumber)
 		{
 			return (PtrToEmployee) ptr; 
-		}
-		return NULL; 
+		} 
 	}
+	return NULL;
 }
 
 PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char *targetName)
@@ -22,9 +22,9 @@ PtrToEmployee searchEmployeeByName(PtrToConstEmployee ptr, int tableSize, char *
 		if(strcmp(ptr->name, targetName) == 0)
 		{
 			return (PtrToEmployee) ptr;
-		}
-		return NULL; 
-	}		
+		} 
+	}	
+	return NULL;	
 }
 
 PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int tableSize, char *targetPhone)
@@ -36,8 +36,8 @@ PtrToEmployee searchEmployeeByPhone(PtrToConstEmployee ptr, int tableSize, char 
 		{
 			return (PtrToEmployee) ptr; 
 		}
-		return NULL; 
 	}
+	return NULL;
 }
 
 PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, double targetSal)
@@ -49,9 +49,6 @@ PtrToEmployee searchEmployeeBySalary(PtrToConstEmployee ptr, int tableSize, doub
 		{
 			return (PtrToEmployee) ptr; 
 		}
-		else
-		{
-			return NULL;
-		} 
 	}
+	return NULL;
 }
